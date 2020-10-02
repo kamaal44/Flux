@@ -1,0 +1,12 @@
+{
+	"name": "pyget",
+	"version": "1.0",
+	"arch": "all",
+	"maintainer": "@RealAAbraham",
+	"description": "A simple and small tool to make downloading files easy",
+	"homepage": "https://github.com/RealAAbraham/PyGet",
+	"depends": ["python"],
+	"files" : {
+		"pyget.py": "bin/pyget",
+	}
+}
