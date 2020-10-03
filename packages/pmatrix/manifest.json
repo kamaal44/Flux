@@ -1,0 +1,12 @@
+{
+	"name": "pmatrix",
+	"version": "1.0",
+	"arch": "all",
+	"maintainer": "@RealAAbraham",
+	"description": "like CMatrix, but in Python",
+	"homepage": "https://github.com/RealAAbraham/Flux",
+	"depends": ["python"],
+	"files" : {
+		"pmatrix.py": "bin/pmatrix"
+	}
+}
