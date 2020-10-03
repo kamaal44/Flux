@@ -20,7 +20,7 @@ Clone the repo and run `make build`.
 Termux is only available on Android! I am assuming you have installed it.
 Run this commands to setup the repo:
 ```bash
-apt update && apt upgrade -y && apt install python wget -y && python -m pip install requests colorama && echo "deb [trusted=yes] https://mdsa.icu/termux" >> $PREFIX/etc/apt/sources.list
+apt update && apt upgrade -y && apt install python wget -y && python -m pip install requests colorama && echo "deb [trusted=yes] https://mdsa.icu/flux termux extras" >> $PREFIX/etc/apt/sources.list
 ```
 
 ## NOTE

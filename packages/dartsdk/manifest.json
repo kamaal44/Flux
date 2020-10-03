@@ -1,0 +1,12 @@
+{
+	"name": "enigma",
+	"version": "1.1",
+	"arch": "all",
+	"maintainer": "@RealAAbraham",
+	"description": "an encryption/decryption engine inspired by the Enigma of the German army from World War II",
+	"homepage": "https://github.com/RealAAbraham/Enigma",
+	"depends": ["python"],
+	"files" : {
+		"enigma.py": "bin/enigma"
+	}
+}

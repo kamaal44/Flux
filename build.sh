@@ -25,6 +25,12 @@ mv tcp.py ..
 cd ..
 echo "...done."
 
+echo "Building Dart SDK..."
+cd dartsdk
+bash build.sh
+cd ..
+echo "...done."
+
 echo "Assembling files..."
 mkdir build
 mv *.deb build
