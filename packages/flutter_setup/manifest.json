@@ -5,9 +5,9 @@
 	"maintainer": "@RealAAbraham",
 	"description": "a tool to setup the flutter SDK on Termux",
 	"homepage": "https://github.com/RealAAbraham/Flux",
-	"depends": ["bash", "curl", "file", "git", "mkdir", "rm", "unzip", "which", "xz-utils", "zip"],
+	"depends": ["bash", "curl", "git", "unzip", "xz-utils", "zip"],
 	"files" : {
-		"flutter_setup.sh": "bin/flutter_setup"
+		"flutter_setup.sh": "bin/flutter_setup",
 		"flutter_test.sh": "bin/flutter_test"
 	}
 }

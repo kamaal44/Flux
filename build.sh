@@ -26,9 +26,18 @@ cd ..
 echo "...done."
 
 echo "Building Flutter SDK setup..."
-mv tcp.py flutter_sdk
+mv tcp.py flutter_setup
 cd flutter_setup
 chmod a+x *.sh
+python tcp.py manifest.json
+mv *.deb ..
+mv tcp.py ..
+cd ..
+echo "...done."
+
+echo "Building PMatrix..."
+mv tcp.py pmatrix
+cd pmatrix
 python tcp.py manifest.json
 mv *.deb ..
 mv tcp.py ..
