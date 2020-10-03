@@ -1,0 +1,8 @@
+# Flux by Alexander Abraham
+# licensed under the MIT license
+language: "python"
+python:
+  - "3.8"
+sudo: true
+install: "sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install -y wget"
+script: "make build"

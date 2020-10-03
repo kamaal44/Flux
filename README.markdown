@@ -1,5 +1,5 @@
 # FLUX
-
+[![Build Status](https://travis-ci.org/RealAAbraham/Flux.svg?branch=master)](https://travis-ci.org/RealAAbraham/Flux)
 ## ABOUT
 
 Flux is a package repo for the Termux Linux Environment.
