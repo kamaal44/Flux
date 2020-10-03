@@ -8,6 +8,7 @@ echo "...done."
 echo "Building PyGet..."
 mv tcp.py pyget
 cd pyget
+chmod a+x pyget.py
 python tcp.py manifest.json
 mv *.deb ..
 mv tcp.py ..
@@ -17,6 +18,7 @@ echo "...done."
 echo "Building Enigma..."
 mv tcp.py enigma
 cd enigma
+chmod a+x enigma.py
 python tcp.py manifest.json
 mv *.deb ..
 mv tcp.py ..
@@ -40,4 +42,8 @@ wget https://raw.githubusercontent.com/termux/termux-apt-repo/master/termux-apt-
 mv termux-apt-repo tarit.py
 mkdir flux
 python tarit.py build flux
+echo "...done."
+
+echo "Cleaning up..."
+rm -rf tarit.py
 echo "...done."

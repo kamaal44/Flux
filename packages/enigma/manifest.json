@@ -7,6 +7,6 @@
 	"homepage": "https://github.com/RealAAbraham/Enigma",
 	"depends": ["python"],
 	"files" : {
-		"src/enigma.py": "bin/enigma"
+		"enigma.py": "bin/enigma"
 	}
 }

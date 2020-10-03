@@ -1,4 +1,4 @@
-#!/data/data/com.termux/filey/usr/bin/python
+#!/usr/bin/env python
 
 # ENIGMA by Alexander Abraham
 # licensed under the MIT license
