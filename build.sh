@@ -26,8 +26,18 @@ echo "...done."
 echo "Assembling files..."
 mkdir build
 mv *.deb build
+mv build ..
 echo "...done."
 
 echo "Cleaning up..."
 rm -rf tcp.py
+cd ..
+pwd
+echo "...done."
+
+echo "Building repo..."
+wget https://raw.githubusercontent.com/termux/termux-apt-repo/master/termux-apt-repo
+mv termux-apt-repo tarit.py
+mkdir flux
+python tarit.py build flux
 echo "...done."

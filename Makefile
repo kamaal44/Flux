@@ -1,2 +1,2 @@
 build: ; bash build.sh
-clean: ; rm -rf build
+clean: ; rm -rf build flux
