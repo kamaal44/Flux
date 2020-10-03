@@ -25,9 +25,13 @@ mv tcp.py ..
 cd ..
 echo "...done."
 
-echo "Building Dart SDK..."
-cd dartsdk
-bash build.sh
+echo "Building Flutter SDK setup..."
+mv tcp.py flutter_sdk
+cd flutter_setup
+chmod a+x *.sh
+python tcp.py manifest.json
+mv *.deb ..
+mv tcp.py ..
 cd ..
 echo "...done."
 
