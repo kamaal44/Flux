@@ -1,9 +1,33 @@
 echo "Changing into package dir..."
 cd packages
+echo "Fetching tools..."
 wget https://raw.githubusercontent.com/termux/termux-create-package/master/termux-create-package
 mv termux-create-package tcp.py
-python tcp.py pyget/manifest.json
-python tcp.py enigma/manifest.json
-mkdir -p build
+echo "...done."
+
+echo "Building PyGet..."
+mv tcp.py pyget
+cd pyget
+python tcp.py manifest.json
+mv *.deb ..
+mv tcp.py ..
+cd ..
+echo "...done."
+
+echo "Building Enigma..."
+mv tcp.py enigma
+cd enigma
+python tcp.py manifest.json
+mv *.deb ..
+mv tcp.py ..
+cd ..
+echo "...done."
+
+echo "Assembling files..."
+mkdir build
 mv *.deb build
-rm -rf tcp.py && mv build ..
+echo "...done."
+
+echo "Cleaning up..."
+rm -rf tcp.py
+echo "...done."
